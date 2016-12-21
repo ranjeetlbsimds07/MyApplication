@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:ignoreGravity="@string/_true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    >
+
+    <TextView
+        android:id="@+id/txtAppName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tic_tac_toe"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:textSize="@dimen/text_padding_30"
+        android:textColor="@color/white"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/btStartGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:background="@color/button"
+        android:layout_below="@+id/txtAppName"
+        android:text="@string/startGame" />
+
+    <Button
+        android:id="@+id/btnOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btStartGame"
+        android:layout_below="@+id/btStartGame"
+        android:layout_marginTop="41dp"
+        android:background="@color/button"
+        android:text="@string/options" />
+
+    <Button
+        android:id="@+id/Exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnOption"
+        android:layout_below="@+id/btnOption"
+        android:layout_marginTop="41dp"
+        android:background="@color/button"
+        android:text="@string/exitText" />
+
+</RelativeLayout>

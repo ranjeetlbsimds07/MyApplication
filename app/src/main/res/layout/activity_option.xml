@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="@dimen/text_padding_25"
+    >
+    <TextView
+        android:id="@+id/txtAppName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tic_tac_toe"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:textSize="@dimen/text_padding_30"
+        android:textColor="@color/white"
+        android:padding="10dp"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_centerVertical="true">
+
+
+    <RadioGroup
+        android:id="@+id/radioSelectGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/txtStartWithAndroid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_game_with_android"
+            android:textSize="@dimen/dp_15"
+            android:textColor="@color/white"
+            android:layout_alignParentLeft="true"
+            android:padding="@dimen/dp_10"/>
+
+        <RadioButton
+            android:id="@+id/txtStartWithTwoPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_game_with_two_player"
+            android:textSize="@dimen/dp_15"
+            android:textColor="@color/white"
+            android:layout_alignParentLeft="true"
+            android:padding="@dimen/dp_10"
+            android:checked="true"/>
+
+    </RadioGroup>
+
+   <!-- <TextView
+        android:id="@+id/txtStartWithAndroid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Game with two Player"
+        android:textSize="@dimen/dp_15"
+        android:textColor="@color/white"
+        android:layout_alignParentLeft="true"
+        android:padding="@dimen/dp_10"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerVertical="true">
+
+      <!--  <TextView
+            android:id="@+id/txtStartWithTwoplayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Game with two Player"
+            android:textSize="@dimen/dp_15"
+            android:textColor="@color/white"
+            android:layout_alignParentLeft="true"
+            android:padding="@dimen/dp_10"/>-->
+
+        <TextView
+            android:id="@+id/txtNames"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/players_names"
+            android:gravity="center"
+            android:textSize="@dimen/dp_15"
+            android:textColor="@color/white"
+            android:layout_alignParentLeft="true"
+            android:padding="@dimen/dp_10"/>
+        <EditText
+            android:id="@+id/edtPlayer1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/dp_15"
+            android:layout_alignParentLeft="true"
+            android:padding="@dimen/dp_10"
+            android:singleLine="true"
+            android:hint="@string/player_1"
+            android:background="@color/white"
+            android:textColorHint="@color/black"/>
+
+        <EditText
+            android:id="@+id/edtPlayer2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/dp_15"
+            android:singleLine="true"
+            android:layout_alignParentLeft="true"
+            android:padding="@dimen/dp_10"
+            android:background="@color/white"
+            android:hint="@string/player_2"
+            android:textColorHint="@color/black"/>
+        <EditText
+            android:id="@+id/edtAndroid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/dp_15"
+            android:singleLine="true"
+            android:layout_alignParentLeft="true"
+            android:padding="@dimen/dp_10"
+            android:background="@color/white"
+            android:text="@string/android"
+            android:enabled="false"
+            android:visibility="gone"
+            android:textColorHint="@color/black"/>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ok"
+            android:textColor="@color/black"
+            android:padding="@dimen/dp_15"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+</RelativeLayout>
